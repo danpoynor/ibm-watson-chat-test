@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM watsonx Assistant: Billing Assistant Chat Test - Dan Poynor</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+    </style>
+    <script>
+        window.watsonAssistantChatOptions = {
+            // NOTE: integrationID and serviceInstanceID are not considered secret
+            integrationID: "d7637e62-3d8b-4fd7-ae0b-dc32952af6df", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "67a8413a-5b91-44b4-8845-89b7e6c3acb2", // The ID of your service instance.
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+</head>
+
+<body>
+    <h1 style="font-size: 24px">IBM watsonx Assistant: Billing Assistant Chat Test</h1>
+    <p><mark>NOTE: This assistant is not fully trained</mark></p>
+    <p>Prompt examples:</p>
+    <ul>
+        <li>What can you do?</li>
+        <li>Find nearby location</li>
+        <li>Check account balance</li>
+        <li>See how I can help</li>
+        <li>Schedule an appointment</li>
+        <li>Make a payment</li>
+    </ul>
+
+    <p><strong>To get started, click the blue dot in bottom right corner.</strong></p>
+
+</body>
+
+</html>
